@@ -36,7 +36,7 @@ def main():
     wavenum = np.arange(band_limit[0,0],band_limit[-1,-1],1)
 
     # initialize longwave source function
-    source = planck(wavenum, 250) # use 250 K as a reference
+    source = planck(wavenum, 233) # use 233 K as a reference
     # generate parameterization for longwave liquid
     # fu, q., an accurate parameterization of the solar radiative    
     # properties of cirrus clouds for climate models., j. climate,     
