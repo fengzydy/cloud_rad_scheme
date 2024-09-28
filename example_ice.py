@@ -43,7 +43,7 @@ def main():
     wavenum = np.arange(band_limit[0,0], band_limit[-1,-1], 1)
 
     # initialize longwave source function
-    source = planck(wavenum, 250)
+    source = planck(wavenum, 233)
 
     # generate parameterization for longwave ice
     compute_ice(path_ori, 'solid_column', 50,
