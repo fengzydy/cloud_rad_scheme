@@ -47,10 +47,10 @@ def main():
 
     # generate parameterization for longwave ice
     compute_ice(path_ori, 'solid_column', 50,
-                'lut_ice_lw_solid_column_severlyroughen_gamma_aeq1_thick.nc',
-                'pade_ice_lw_solid_column_severlyroughen_gamma_aeq1_thick.nc',
+                'band_ice_lw_solid_column_severlyroughen_gamma_aeq1_thin.nc',
+                'pade_ice_lw_solid_column_severlyroughen_gamma_aeq1_thin.nc',
                 1, wavenum, source, band_limit, re_range_lut, re_range_pade,
-                re_ref_pade, False)
+                re_ref_pade, True)
 
     # initialize shortwave band limits that matches with rrtmgp gas optics
     band_limit = np.array([[  820., 2680.], 
@@ -75,7 +75,7 @@ def main():
 
     # generate parameterization for shortwave ice
     compute_ice(path_ori, 'solid_column', 50,
-                'lut_ice_sw_solid_column_severlyroughen_gamma_aeq1_thick.nc',
+                'band_ice_sw_solid_column_severlyroughen_gamma_aeq1_thick.nc',
                 'pade_ice_sw_solid_column_severlyroughen_gamma_aeq1_thick.nc',
                 1, wavenum, source, band_limit, re_range_lut, re_range_pade,
                 re_ref_pade,False)
