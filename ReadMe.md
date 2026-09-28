@@ -1,5 +1,5 @@
 # Cloud_rad_scheme
-Contact Jing Feng <Jing.Feng@noaa.gov> for questions
+Contact Jing Feng <jing.feng@princeton.edu> for questions
 
 ## Module required:
 `pip install netCDF4`
